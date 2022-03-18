@@ -1,7 +1,7 @@
 new Swiper('.swiper', {
 	navigation: {
-		nextEl: '.event-button-next',
-		prevEl: '.event-button-prev'
+		nextEl: '.events-button-next',
+		prevEl: '.events-button-prev'
 	},
 	slidesPerView: 3,
 	spaceBetween: 30,
