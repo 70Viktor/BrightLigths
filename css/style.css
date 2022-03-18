@@ -1279,7 +1279,7 @@ h1::before, h2::before {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -22px;
+  margin-top: -20px;
   margin-left: -22px;
   height: 44px;
   width: 44px;
