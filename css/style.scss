@@ -388,6 +388,9 @@ h1, h2{
 
 .tracks {
 	margin-bottom: 180px;
+	@media (max-width: 1200px){margin-bottom: 150px;}
+	@media (max-width: 992px){margin-bottom: 120px;}
+	@media (max-width: 425px){margin-bottom: 40px;}
 
 	&-row {
 		display: flex;
@@ -542,28 +545,41 @@ h1, h2{
 //_____GALLERY_________________________________________________________________
 //=============================================================================
 
-.gallery {
+.gallery{
 	margin-bottom: 180px;
-
-
+	&-item img {
+		max-width: 100%;
+	}
 	&-row {
 		display: flex;
+		align-items: center;
+		margin: 0 -15px;
+		@media (max-width: 992px){
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: -15px;
+		}
+		@media (max-width: 767px){ max-width: 570px; margin: 0 auto;}
 	}
-	&-left {
-		flex: 0 1 25%;
-		margin-right: 15px;
+	&-column {
+		padding: 0 15px;
+		@media (max-width: 992px){ padding: 15px;}
+		@media (max-width: 767px){ padding: 10px;}
 	}
+
+	&-left, &-rigth {
+		@media (max-width: 767px){ flex: 0 1 50%;}
+	}
+
 	&-main {
-		margin: 0 15px;
-		flex: 0 1 50%;
+		@media (max-width: 992px){ order: -1;}
 		display: flex;
 		flex-direction: column;
+		margin: -15px 0;
 		&__up {
 			display: flex;
 		}
 		&__down {
-			flex: 0 1 50%;
-			margin-top: 15px;
 			position: relative;
 			&>p {
 				position: absolute;
@@ -577,38 +593,27 @@ h1, h2{
 				text-align: center;
 				color: #7A66CC;
 				z-index: 2;
+				@media (max-width: 992px){font-size: 20px;}
+				@media (max-width: 767px){dz: 18px;}
 			}
 		}
-	&-rigth {
-		flex: 0 1 25%;
-		margin-left: 15px;
+	}
+
+		&-stroke{
+			padding: 15px 0;
+			@media (max-width: 767px){padding: 10px 0;}
 		}
 	}
-}
+	
+	.main-up {
+		margin: 0 -15px;
+		@media (max-width: 767px){ margin: 0 -10px;}
+		& > .gallery-item {
+			padding: 0 15px;
+			@media (max-width: 767px){ padding: 0 10px;}
+		}
 
-.main-up {
-	flex: 0 1 50%;
-	margin-bottom: 15px;
-	&__left {
-		flex: 0 1 50%;
-		margin-right: 15px;
 	}
-	&__right {
-		flex: 0 1 50%;
-		margin-left: 15px;
-	}
-}
-
-.gallery-item:hover {
-	overflow: hidden;
-	& > img {
-		display: block;
-		border-radius: 20px 0;
-		transform: scale(1.1);
-		transition: 10s;
-	}
-
-}
 
 //=============================================================================
 //_____EVENTS (slider)_________________________________________________________
