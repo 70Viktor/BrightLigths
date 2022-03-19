@@ -549,7 +549,8 @@ h1, h2{
 .gallery{
 	margin-bottom: 180px;
 	@media (max-width: 1200px){margin-bottom: 130px;}
-	@media (max-width: 992px){margin-bottom: 90px;}
+	@media (max-width: 992px){margin-bottom: 60px;}
+	@media (max-width: 425px){}
 	&-item img {
 		max-width: 100%;
 	}
@@ -637,15 +638,15 @@ h1, h2{
 	margin: 0px auto 180px;
 	@media (max-width: 1340px){ max-width: 1070px;}
 	@media (max-width: 1200px){ max-width: 890px; margin-bottom: 130px;}
-	@media (max-width: 940px){ max-width: 510px; margin-bottom: 80px;}
-	@media (max-width: 540px){ max-width: 400px; margin-bottom: 40px;}
-	@media (max-width: 425px){ max-width: 270px;}
+	@media (max-width: 940px){ max-width: 510px; margin-bottom: 50px;}
+	@media (max-width: 540px){ max-width: 400px;}
+	@media (max-width: 425px){ max-width: 270px; margin-bottom: 100px;}
 	
 	&-button-next{
 		position: absolute;
 		right: 0px;
 		top: 50%;
-		@media (max-width: 425px){ top: -50px; right: 85px;}
+		@media (max-width: 425px){ top: 430px;; right: 60px;}
 		transform: translateY(-50%);
 		height: 60px;
 		width: 40px;
@@ -657,7 +658,7 @@ h1, h2{
 		position: absolute;
 		left: 0px;
 		top: 50%;
-		@media (max-width: 425px){ top: -50px; left: 85px;}
+		@media (max-width: 425px){ top: 430px; left: 60px;}
 		transform: translateY(-50%);
 		height: 60px;
 		width: 40px;

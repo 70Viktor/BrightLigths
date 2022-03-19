@@ -1165,7 +1165,7 @@ h1::before, h2::before {
 
 @media (max-width: 992px) {
   .gallery {
-    margin-bottom: 90px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1362,20 +1362,20 @@ h1::before, h2::before {
 @media (max-width: 940px) {
   .events {
     max-width: 510px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 540px) {
   .events {
     max-width: 400px;
-    margin-bottom: 40px;
   }
 }
 
 @media (max-width: 425px) {
   .events {
     max-width: 270px;
+    margin-bottom: 100px;
   }
 }
 
@@ -1394,8 +1394,8 @@ h1::before, h2::before {
 
 @media (max-width: 425px) {
   .events-button-next {
-    top: -50px;
-    right: 85px;
+    top: 430px;
+    right: 60px;
   }
 }
 
@@ -1414,8 +1414,8 @@ h1::before, h2::before {
 
 @media (max-width: 425px) {
   .events-button-prev {
-    top: -50px;
-    left: 85px;
+    top: 430px;
+    left: 60px;
   }
 }
 
