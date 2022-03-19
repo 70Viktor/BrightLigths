@@ -17,3 +17,14 @@ new Swiper('.swiper', {
 		}
 	}
 })
+
+const icon = document.querySelector('.row-header__icon')
+if (icon) {
+	const menu = document.querySelector('.row-header__nav')
+
+	icon.addEventListener("click", (e) => {
+		document.body.classList.toggle('_lock')
+		icon.classList.toggle('_active')
+		menu.classList.toggle('_active')
+	})
+}
