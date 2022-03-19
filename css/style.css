@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: #1C1B21;
+  background-color: #1c1b21;
 }
 
 .container {
@@ -690,6 +690,24 @@ h1::before, h2::before {
   margin-bottom: 265px;
 }
 
+@media (max-width: 1200px) {
+  .text {
+    margin-bottom: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .text {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text {
+    margin-bottom: 30px;
+  }
+}
+
 .text-row {
   position: relative;
   display: -webkit-box;
@@ -790,7 +808,7 @@ h1::before, h2::before {
 
 @media (max-width: 767px) {
   .body-text {
-    padding: 20px;
+    padding: 15px;
   }
 }
 
@@ -854,25 +872,80 @@ h1::before, h2::before {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .tracks-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+}
+
 .tracks-img {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
 }
 
+@media (max-width: 767px) {
+  .tracks-img {
+    max-width: 240px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 425px) {
+  .tracks-img {
+    display: none;
+  }
+}
+
 .tracks-body {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+@media (max-width: 1200px) {
+  .tracks-body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 55%;
+            flex: 1 0 55%;
+  }
+}
+
+@media (max-width: 992px) {
+  .tracks-body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 60%;
+            flex: 1 0 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .tracks-body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .img-tracks {
-  margin-left: 40px;
+  margin: 0 40px;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0 20px rgba(122, 102, 204, 0.6), 0 0 0 40px rgba(122, 102, 204, 0.3);
           box-shadow: 0 0 0 20px rgba(122, 102, 204, 0.6), 0 0 0 40px rgba(122, 102, 204, 0.3);
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
+}
+
+.img-tracks img {
+  max-width: 100%;
 }
 
 .img-tracks:hover {
@@ -918,8 +991,26 @@ h1::before, h2::before {
   margin-left: 15px;
 }
 
+@media (max-width: 767px) {
+  .body-tracks {
+    margin-left: 0;
+  }
+}
+
 .list-tracks {
   margin-top: 140px;
+}
+
+@media (max-width: 1200px) {
+  .list-tracks {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .list-tracks {
+    margin-top: 60px;
+  }
 }
 
 .list-tracks__item {
@@ -928,6 +1019,31 @@ h1::before, h2::before {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
+}
+
+@media (max-width: 1200px) {
+  .list-tracks__item {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .list-tracks__item {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.list-tracks__item > span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 0.5;
+  display: inline-block;
+  width: 30px;
 }
 
 .list-tracks__item--active {
@@ -942,6 +1058,27 @@ h1::before, h2::before {
   display: inline-block;
 }
 
+@media (max-width: 1200px) {
+  .link-tracks__title {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .link-tracks__title {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .link-tracks__title {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+
 .link-tracks__spotify {
   position: relative;
   padding: 4px 0;
@@ -949,6 +1086,12 @@ h1::before, h2::before {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
+}
+
+@media (max-width: 425px) {
+  .link-tracks__spotify {
+    margin-left: 50px;
+  }
 }
 
 .link-tracks__spotify::before {
@@ -968,6 +1111,12 @@ h1::before, h2::before {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
+}
+
+@media (max-width: 425px) {
+  .link-tracks__itunes {
+    margin-left: 50px;
+  }
 }
 
 .link-tracks__itunes::before {
