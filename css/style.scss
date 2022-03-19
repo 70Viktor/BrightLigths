@@ -622,16 +622,26 @@ h1, h2{
 .swiper {
 	max-width: 1110px;
 	margin: 0 auto;
+	@media (max-width: 1340px){ max-width: 910px;}
+	@media (max-width: 1200px){ max-width: 720px;}
+	@media (max-width: 940px){ max-width: 350px;}
+	@media (max-width: 540px){ max-width: 270px;}
 }
 
 .events {
 	position: relative;
 	max-width: 1270px;
+	@media (max-width: 1340px){ max-width: 1070px;}
+	@media (max-width: 1200px){ max-width: 890px;}
+	@media (max-width: 940px){ max-width: 510px;}
+	@media (max-width: 540px){ max-width: 400px;}
+	@media (max-width: 425px){ max-width: 270px;}
 	margin: 0px auto 180px;
 	&-button-next{
 		position: absolute;
 		right: 0px;
 		top: 50%;
+		@media (max-width: 425px){ top: -50px; right: 85px;}
 		transform: translateY(-50%);
 		height: 60px;
 		width: 40px;
@@ -643,6 +653,7 @@ h1, h2{
 		position: absolute;
 		left: 0px;
 		top: 50%;
+		@media (max-width: 425px){ top: -50px; left: 85px;}
 		transform: translateY(-50%);
 		height: 60px;
 		width: 40px;
@@ -657,8 +668,11 @@ h1, h2{
 		width: 100%;
 	
 		&__image {
-			width: 350px;
 			margin-bottom: 30px;
+			@media (max-width: 1340px){ margin-bottom: 20px;}
+			& img {
+				max-width: 100%;
+			}
 		}
 		&__location {
 			padding-left: 35px;
@@ -667,6 +681,7 @@ h1, h2{
 			font-size: 18px;
 			line-height: 27px;
 			opacity: 0.5;
+			@media (max-width: 1340px){ padding-left: 20px; margin-bottom: 15px; }
 		}
 		&__placement {
 			padding-left: 35px;
@@ -674,6 +689,7 @@ h1, h2{
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 27px;
+			@media (max-width: 1340px){ padding-left: 20px; margin-bottom: 15px;}
 		}
 		&__info {
 			display: flex;

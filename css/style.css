@@ -1298,10 +1298,64 @@ h1::before, h2::before {
   margin: 0 auto;
 }
 
+@media (max-width: 1340px) {
+  .swiper {
+    max-width: 910px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .swiper {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 940px) {
+  .swiper {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 540px) {
+  .swiper {
+    max-width: 270px;
+  }
+}
+
 .events {
   position: relative;
   max-width: 1270px;
   margin: 0px auto 180px;
+}
+
+@media (max-width: 1340px) {
+  .events {
+    max-width: 1070px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .events {
+    max-width: 890px;
+  }
+}
+
+@media (max-width: 940px) {
+  .events {
+    max-width: 510px;
+  }
+}
+
+@media (max-width: 540px) {
+  .events {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 425px) {
+  .events {
+    max-width: 270px;
+  }
 }
 
 .events-button-next {
@@ -1317,6 +1371,13 @@ h1::before, h2::before {
   border: 1px solid #FFFFFF;
 }
 
+@media (max-width: 425px) {
+  .events-button-next {
+    top: -50px;
+    right: 85px;
+  }
+}
+
 .events-button-prev {
   position: absolute;
   left: 0px;
@@ -1330,6 +1391,13 @@ h1::before, h2::before {
   border: 1px solid #FFFFFF;
 }
 
+@media (max-width: 425px) {
+  .events-button-prev {
+    top: -50px;
+    left: 85px;
+  }
+}
+
 .events-card {
   background: #2F2B2B;
   border-radius: 30px 0px;
@@ -1337,8 +1405,17 @@ h1::before, h2::before {
 }
 
 .events-card__image {
-  width: 350px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1340px) {
+  .events-card__image {
+    margin-bottom: 20px;
+  }
+}
+
+.events-card__image img {
+  max-width: 100%;
 }
 
 .events-card__location {
@@ -1350,12 +1427,26 @@ h1::before, h2::before {
   opacity: 0.5;
 }
 
+@media (max-width: 1340px) {
+  .events-card__location {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+}
+
 .events-card__placement {
   padding-left: 35px;
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+}
+
+@media (max-width: 1340px) {
+  .events-card__placement {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
 }
 
 .events-card__info {
