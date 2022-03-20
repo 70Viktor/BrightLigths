@@ -49,6 +49,66 @@ h1, h2{
 	}
 }
 
+.player-btn{
+	cursor: pointer;
+	border: 0;
+	background: transparent;
+	box-sizing: border-box;
+	width: 0;
+	height: 25px;
+ 
+	border-color: transparent transparent transparent #fff;
+	transition: 100ms all ease;
+	cursor: pointer;
+
+	border-style: solid;
+	border-width: 12px 0 12px 22px;
+ 
+	&.active {
+	  border-style: double;
+	  border-width: 0px 0 0px 22px;
+	}
+ 
+	&:hover {
+	  border-color: transparent transparent transparent #aaa;
+	}
+ }
+
+ .player {
+	display: flex;
+	align-items: center;
+
+	&-progress-container,
+	&-progress-container-2{
+		flex: 1 0 auto;
+		display: flex;
+		align-items: center;
+		height: 1px;
+		background: #fff;
+		border: 1px solid #FFFFFF;
+		border-left: none;
+		border-right: none;
+		margin-left: 30px;
+		.progress,
+		.progress-2{
+			border: 1px solid #7A66CC;
+			background-color: #7A66CC;
+			position: relative;
+		}
+		.progress::after,
+		.progress-2::after{
+			content: "";
+			display: block;
+			position: absolute;
+			height: 20px;
+			width: 2px;
+			right: 0;
+			transform: translateY(-50%);
+			background-color: #7A66CC;
+		}
+	}
+}
+
 //=============================================================================
 //_____HEADER__________________________________________________________________
 //=============================================================================
@@ -163,7 +223,7 @@ h1, h2{
 				width: 100%;
 				height: 100%;
 				background: rgba(28, 27, 33, 0.95);
-				padding: 100px 30px 30px 30px;
+				padding: 100px 30px 100px 30px;
 				transition: left 0.3s ease;
 				z-index: 5;
 				align-items: center;
@@ -223,7 +283,11 @@ h1, h2{
 		color: transparent;
 		-webkit-text-stroke: 1px #FFFFFF;
 	}
+	&__player{
+		margin-top: 50px;
+	}
 }
+
 
 .news {
 	display: flex;
@@ -441,6 +505,7 @@ h1, h2{
 			background: url('../img/icons/“.png');
 		}
 	}
+
 	&__link {
 		display: block;
 		margin-top: 25px;
@@ -519,6 +584,9 @@ h1, h2{
 	&__title {
 		//h2
 	}
+	&__player{
+		margin-top: 60px;
+	}
 	&__list {
 	}
 	&__link {
@@ -526,9 +594,9 @@ h1, h2{
 }
 
 .list-tracks {
-	margin-top: 140px;
-	@media (max-width: 1200px){margin-top: 100px;}
-	@media (max-width: 992px){margin-top: 60px;}
+	margin-top: 80px;
+	@media (max-width: 1200px){margin-top: 50px;}
+	@media (max-width: 992px){margin-top: 20px;}
 
 	&__item {
 		margin-top: 20px;
@@ -556,7 +624,7 @@ h1, h2{
 			width: 30px;
 		}
 	}
-	&__item--active {
+	&__item.active{
 		color: #7A66CC;
 	}
 
